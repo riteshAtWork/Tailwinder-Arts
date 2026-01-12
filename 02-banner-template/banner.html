@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/src/index.css" />
+        <title>Banner is teh new manner</title>
+    </head>
+    <body class="relative">
+        <!-- for background gradient and line effect -->
+        <div id="background-div" class="fixed inset-0 h-dvh divide-x divide-gray-200 bg-linear-to-r from-yellow-300 via-cyan-300 to-indigo-300 flex ">
+            <div class="h-full w-1/8 "></div>
+            <div class="h-full w-1/8 "></div>
+            <div class="h-full w-1/8 "></div>
+            <div class="h-full w-1/8 "></div>
+            <div class="h-full w-1/8 "></div>
+            <div class="h-full w-1/8 "></div>
+            <div class="h-full w-1/8 "></div>
+            <div class="h-full w-1/8 "></div>
+        </div>
+        <!-- "absolute" will bring div in fornt as parent is made relative for refence and top-0 and left-0 will give it position to overlap over "background-div" -->
+        <div id="front-div" class="absolute top-0 left-0 h-dvh w-dvw flex flex-col">
+            <nav class="flex items-center">
+                <ul class="pl-[5%] flex space-x-20 font-bold">
+                    <li class="hover:text-white cursor-pointer">Home</li>
+                    <li class="hover:text-white cursor-pointer">Agency</li>
+                    <li class="hover:text-white cursor-pointer">Sell more</li>
+                    <li class="hover:text-white cursor-pointer">About us</li>
+                </ul>
+                <input type="text" placeholder="Search.." class="px-3 py-1 w-[15%] ml-auto bg-gray-200 rounded-2xl text-right">
+                <img src="../02-banner-template/Banner.png" alt="Logo" class="w-16 h-16 rounded-full ml-[10%] mr-[1%]" />
+            </nav>
+            <div id="content-fground-div" class=" flex-1 flex">
+                <div id="left-content-fground-div" class="w-3/5 pl-[5%]">
+                    <div class="my-[5%] w-[15%] min-w-38 py-1 text-xl text-white bg-emerald-500 rounded-3xl text-center">Digital Agency</div>
+                    <div class="text-8xl">
+                        <p>Does you business</p>
+                        <p>need <span class="text-emerald-500">to sell more?</span></p>
+                    </div>
+                    <div>
+                        <p class="mt-10 w-[70%] line-clamp-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ducimus fugiat dolores aliquam hic, et maiores veritatis omnis 
+                            porro quos placeat iusto soluta error magnam facilis illum nobis delectus animi possimus.
+                        </p>
+                        <div class="mt-15">
+                            <button class="px-3 py-2 bg-emerald-500 text-white rounded-sm">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="right-content-fground-div" class=" relative w-2/5 items-center">
+                    <!-- <svg class="h-1/2 w-full animate-[spin_5s__linear_infinite]" viewBox="0 0 200 200" preserveAspectRatio="none">
+                        <ellipse 
+                            cx="50%" 
+                            cy="50%" 
+                            rx="45%" 
+                            ry="45%" 
+                            class="fill-none stroke-emerald-500 stroke-5" />
+                    </svg> -->
+                    <img src="./spinner.png" alt="spinindle-spin" class=" p-[5%] animate-[spin_10s_linear_infinite]"/>
+                    <div class="absolute right-0 bottom-20 w-35 flex justify-end p-2 pr-10 space-x-2 items-center bg-gray-800 rounded-l-xl">
+                        <img src="./instagram.png" alt="instagram" class="cursor-pointer ">
+                        <img src="./twitter.png" alt="twitter" class="cursor-pointer ">
+                        <img src="./discord.png" alt="discord" class="cursor-pointer ">
+                        <img src="./youtube.png" alt="youtube" class="cursor-pointer ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
