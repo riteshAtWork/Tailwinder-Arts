@@ -20,6 +20,7 @@
         </div>
         <!-- "absolute" will bring div in fornt as parent is made relative for refence and top-0 and left-0 will give it position to overlap over "background-div" -->
         <div id="front-div" class="absolute top-0 left-0 h-dvh w-dvw flex flex-col">
+            <nav class="flex items-center bg-neutral-500/20 backdrop-blur-3xl">
                 <ul class="pl-[5%] flex space-x-20 font-bold">
                     <li class="hover:text-white cursor-pointer">Home</li>
                     <li class="hover:text-white cursor-pointer">Agency</li>
@@ -58,6 +59,19 @@
                             class="fill-none stroke-emerald-500 stroke-5" />
                     </svg> -->
                     <img src="./spinner.png" alt="spinindle-spin" class=" p-[5%] animate-[spin_10s_linear_infinite]"/>
+                    <div class="absolute right-0 bottom-20 w-35 flex justify-end p-2 pr-10 space-x-2 items-center bg-white/20 backdrop:filter backdrop-blur-lg rounded-l-xl border border-white shadow-lg">
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="./instagram.png" alt="instagram" class="cursor-pointer" />
+                        </a>
+                        <a href="https://x.com" target="_blank">
+                            <img src="./twitter.png" alt="twitter" class="cursor-pointer " />
+                        </a>
+                        <a href="https://linkedin.com" target="_blank">
+                            <img src="./linkedin.png" alt="linkedin" class="cursor-pointer " />
+                        </a>
+                        <a href="https://youtube.com" target="_blank">
+                            <img src="./youtube.png" alt="youtube" class="cursor-pointer " />
+                        </a>
                     </div>
                 </div>
             </div>
